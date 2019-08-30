@@ -1,0 +1,82 @@
+<html>
+    <head>
+            <style>
+                    
+                    h1   {color:white; ;}
+                    p    {color: white;}
+                     
+                        .ku{  /* The image used */
+  background-image: url("Lock-Screen-Background-HD-Wallpaper-105.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+                        
+                        text-align: center;}
+                    </style>
+                    <br><br><br><br><br><br><br><br><br>
+        <h1 style="color: white;">  New Registration</h1>
+    </head>
+    <body class="ku">
+<br>
+<form onsubmit="return fun()" action="new.php" method="POST">
+
+    <input type="text" id="us" name="userr" placeholder="Enter_Mail">
+    <label id="lab" style="color: red;visibility: hidden;">Invalid</label>
+    <br>
+    <br>
+    <input type="password" id="pass" name="passw" placeholder="Enter_Password">
+    <label id="lab1" style="color: red;visibility: hidden;">Invalid</label>
+    <br>
+    <br>
+    <input type="password" name="pass1" placeholder="Confirm_Password">
+    <label id="lab2" style="color: red;visibility: hidden;">Invalid</label>
+    <br>
+    <br>
+    <button type="submit">Register</button>
+</form>
+
+
+<script type="text/javascript">
+        
+    function fun(){
+var a=document.getElementById("us").value;
+var b=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-zA-Z]{2,10})(.[a-zA-Z]{2,8})?$/;
+var c=document.getElementById("lab1").value;
+var d=document.getElementById("lab2").value;
+if(b.test(a) ){
+
+
+return true;
+}
+else{
+   /* if(c===""){
+        document.getElementById("lab1").innerHTML="Invalid Password";
+
+document.getElementById("lab1").style.visibility="visible";
+document.getElementById("lab1").style.color="red";
+    }
+    if(d===""){
+        document.getElementById("lab2").innerHTML="Invalid Password";
+
+document.getElementById("lab2").style.visibility="visible";
+document.getElementById("lab2").style.color="red";
+    }
+    if(!(b.test(a))){*/
+document.getElementById("lab").innerHTML="Invalid Mail Format";
+
+document.getElementById("lab").style.visibility="visible";
+document.getElementById("lab").style.color="red";
+//}
+return false;
+}
+    }
+    
+    </script>
+
+    </body>
+</html>

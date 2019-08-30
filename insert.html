@@ -1,0 +1,45 @@
+<html>
+    <head>
+            <style>
+                    
+                    h1   {color:white; ;}
+                    p    {color: white;}
+                    .kuk {
+                          /* The image used */
+  background-image: url("Lock-Screen-Background-HD-Wallpaper-105.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+                        
+                        text-align: center;}
+                    </style>
+            <br>
+        <h1>Insert New Record</h1>
+    </head>
+    <body class="kuk">
+        <form action="insert.php" method="POST">
+                <select id="dr" name="sel">
+         
+            
+                        <option  name="hotmail" value="hotmail">Hotmail</options>
+                        
+                        <option  name="github" value="github">Github</options>
+                        
+                            <option name="instagram" value="instagram">Instagram</options>
+                        
+                                <option  name="twitter" value="twitter">Twitter</options>
+                                
+                                <option  name="facebook" value="facebook">Facebook</options>
+                        
+                        </select>
+                        <input type="text" name="ipu" placeholder="Enter Username">
+                        <input type="password" name="pwo" placeholder="Enter Password">
+                        <button type="submit">Insert</button>
+        </form>
+    </body>
+</html>
